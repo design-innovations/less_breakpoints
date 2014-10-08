@@ -1,0 +1,32 @@
+@import "breakpoints.less";
+
+/* @group Debug */
+#debug-box:before {
+	background: yellow;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999999;
+	
+	@media @phone {
+		content: "phone";
+	}
+	@media @small-phone {
+		content: "small-phone";
+	}
+	@media @tablet-portrait {
+		content: "tablet-portrait";
+	}
+	@media @large-tablet-portrait {
+		content: "large-tablet-portrait";
+	}
+	@media @tablet-landscape {
+		content: "tablet-landscape";
+	}
+	@media @desktop {
+		content: "desktop";
+	}
+	@media @large-desktop {
+		content: "large-desktop";
+	}
+}

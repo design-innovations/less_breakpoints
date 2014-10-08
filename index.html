@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LESS Breakpoint Debugging</title>
+<link href="css/debug.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="debug-box"></div>
+
+<!--
+If you are using PHP then this is a handy way to debug without everybody seeing the debugging output:
+
+// Uncomment the following to see your current remote address, then replace the IP address in the IF statement with the IP address this prints out. Then only the people at this IP will see the debugging.
+//echo $_SERVER['REMOTE_ADDR'];
+
+Add this code to your layout page and replace the IP with the one output from above:
+if ('127.0.0.1' === $_SERVER['REMOTE_ADDR'] ) {
+	echo '<div id="debug-box"></div>';
+}
+-->
+
+</body>
+</html>
