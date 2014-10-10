@@ -1,3 +1,8 @@
+/* Landscape phone to portrait tablet */
+/* Small tablet */
+/* Tablet landscape */
+/* Large desktop */
+/* @group Debug */
 #debug-box:before {
   background: yellow;
   position: fixed;
@@ -25,12 +30,12 @@
     content: "large-tablet-portrait";
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 979px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   #debug-box:before {
     content: "tablet-landscape";
   }
 }
-@media only screen and (min-width: 980px) and (max-width: 1199px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   #debug-box:before {
     content: "desktop";
   }
