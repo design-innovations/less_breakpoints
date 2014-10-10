@@ -68,3 +68,13 @@ For high-density usage you can do the following:
 		}
 
 I hope you enjoy this mixin. It has saved me many hours of work and it makes code much easier to read. If you have any ideas on how to improve it please let me know.
+
+##Try the new breakpoint debugging box!
+
+I have added a handy breakpoint debugging box for HTML and PHP! Just copy the following code below the body tag and add the LESS or CSS into your page.
+
+	<div id="debug-box"></div>
+	
+It will now tell you which breakpoint you are currently viewing. Resize the browser and it will dynamically change according to the screen size.
+
+I have also included a handy piece of PHP you can add to your page so only people at the IP listed sees the debugging area so it can be used on a live site to debug.
