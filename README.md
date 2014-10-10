@@ -7,7 +7,7 @@ These were originally created in SASS using IF statements and I finally found a 
 
 The breakpoints were developed after doing a lot of research and testing while building [www.expertgriller.com](http://) which needed much more accuracy with breakpoints than what comes standard with Bootstrap 3.x. (disclaimer: parts of the site may not break correctly now since the client has taken over the updates)
 
-All "up to" options include all sizes up to that size but does not include that media. For example, if you choose @up-to-desktop then it will affect all sizes until it reaches (and includes) 1 pixel smaller than desktop. The individual names (ie. tablet portrait) only pertain to that one range of sizes. The options with "and bigger" range from the size chosen up through large desktop sizes.
+All "up to" options include all sizes up to that size but does not include that media. For example, if you choose @tablet-landscape-and-smaller then it will affect all sizes until it reaches (and includes) 1 pixel smaller than desktop. The individual names (ie. tablet portrait) only pertain to that one range of sizes. Since there are common issues between the smallest and largest sizes of tablet portrait there is the overall breakpoint for portrait as well as individual breakpoints you can use for small and large portrait sizes for tablets. The options with "and bigger" range from the size chosen up through large desktop sizes and "and smaller" is the chosen breakpoint down to the smallest screen.
 
 ## Options include:
 
@@ -18,28 +18,40 @@ All "up to" options include all sizes up to that size but does not include that 
 - Small phone
 - Phone only
 
-### Small tablets
+### Tablet portrait
 
 - Tablet-portrait
-- Up to tablet portrait
+- Tablet portrait and smaller
 - Tablet portrait and bigger
+
+### Small tablet portrait
+
+- Small tablet portrait
+- Small tablet portrait and smaller
+- Small tablet portrait and bigger
+
+### Large tablet portrait
+
+- Large tablet portrait
+- Large tablet portrait and smaller
+- Large tablet portrait and bigger
+
 
 ###Tablet landscape
 
 - Tablet landscape
-- Up to tablet landscape
+- Tablet landscape and smaller
 - Tablet landscape and bigger
 
 ###Desktop
 
-- Up to desktop
 - Desktop
+- Desktop and smaller
 - Desktop and bigger
 
 ###Large desktop
 
 - Large desktop
-- Up to large desktop
 
 ### Pixel density
 
@@ -53,7 +65,7 @@ First of all, you must be using LESS version 1.3.0 or greater. Usage couldn't be
 
 		#sidebar {
 			width: 30%;
-			@media @up-to-tablet-portrait {
+			@media @small-tablet-portrait-and-smaller {
 				width: 100%;
 			}
 		}

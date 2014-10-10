@@ -2,31 +2,56 @@
 
 /* @group Debug */
 #debug-box:before {
-	background: yellow;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 9999999;
-	
-	@media @phone {
-		content: "phone";
-	}
-	@media @small-phone {
-		content: "small-phone";
-	}
-	@media @tablet-portrait {
-		content: "tablet-portrait";
-	}
-	@media @large-tablet-portrait {
-		content: "large-tablet-portrait";
-	}
-	@media @tablet-landscape {
-		content: "tablet-landscape";
-	}
-	@media @desktop {
-		content: "desktop";
-	}
-	@media @large-desktop {
-		content: "large-desktop";
-	}
+  background: yellow;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999;
+}
+
+/* Landscape phone */
+@media only screen and (max-width: 480px) {
+  #debug-box:before {
+    content: "phone";
+  }
+}
+@media only screen and (max-width: 359px) {
+  #debug-box:before {
+    content: "small-phone";
+  }
+}
+
+/* Small tablet portrait - includes media query for tablet-portrait, but cuts out larger sizes */
+@media only screen and (min-width: 481px) and (max-width: 599px) {
+  #debug-box:before {
+    content: "small-tablet-portrait tablet-portrait";
+  }
+}
+
+/* Large tablet portrait  - includes media query for tablet-portrait, but cuts out smaller sizes */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  #debug-box:before {
+    content: "large-tablet-portrait tablet-portrait";
+  }
+}
+
+/* Tablet landscape */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #debug-box:before {
+    content: "tablet-landscape";
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  #debug-box:before {
+    content: "desktop";
+  }
+}
+
+/* Large desktop */
+@media only screen and (min-width: 1200px) {
+  #debug-box:before {
+    content: "large-desktop";
+  }
 }
