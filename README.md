@@ -37,19 +37,19 @@ All "up to" options include all sizes up to that size but does not include that 
 - Large tablet portrait and bigger
 
 
-###Tablet landscape
+### Tablet landscape
 
 - Tablet landscape
 - Tablet landscape and smaller
 - Tablet landscape and bigger
 
-###Desktop
+### Desktop
 
 - Desktop
 - Desktop and smaller
 - Desktop and bigger
 
-###Large desktop
+### Large desktop
 
 - Large desktop
 
@@ -59,7 +59,7 @@ All "up to" options include all sizes up to that size but does not include that 
 - Retina (Targetting only Apple products with retina.)
 - High Density (for all high density media including retina.)
 
-##Usage
+## Usage
 
 First of all, you must be using LESS version 1.3.0 or greater. Usage couldn't be easier. Simply wrap your code in @media followed by the breakpoing you would like to use.
 
@@ -81,7 +81,7 @@ For high-density usage you can do the following:
 
 I hope you enjoy this mixin. It has saved me many hours of work and it makes code much easier to read. If you have any ideas on how to improve it please let me know.
 
-##Try the new breakpoint debugging box!
+## Try the new breakpoint debugging box!
 
 I have added a handy breakpoint debugging box for HTML and PHP! Just copy the following code below the body tag and add the LESS or CSS into your page.
 
