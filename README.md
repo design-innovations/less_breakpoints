@@ -1,4 +1,4 @@
-#LESS breakpoints
+# LESS breakpoints
 ================
 
 An expanded variety of breakpoints created for more accurate styling across a wide range of media sizes.
@@ -11,7 +11,7 @@ All "up to" options include all sizes up to that size but does not include that 
 
 ## Options include:
 
-###Phone
+### Phone
 
 - Phone
 - Super small phone
